@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="250dip"
+	android:layout_height="120dip">
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="系统检测您是第一次使用IDraw，您需要验证您的微博。验证成功后，将可以使用微博分享功能。"></TextView>
+	<Button android:id="@+id/first_run_btn" android:text="去认证"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentBottom="true"></Button>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	android:background="@drawable/back">
+	<scut.nomi.idraw.view.CoverGallery
+		android:id="@+id/myGallery" android:paddingTop="35dp"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_centerInParent="true" />
+	
+	<ImageView android:id="@+id/photoBtn" android:layout_width="60dp"
+		android:layout_height="60dp" android:layout_alignParentRight="true"
+		android:src="@drawable/camera" android:layout_marginTop="10dp" android:layout_marginRight="10dp"
+		android:scaleType="fitEnd" android:background="@null">
+	</ImageView>
+	<ImageView 
+	    android:id="@+id/folder" 
+	    android:layout_width="60dp"
+		android:layout_height="60dp" 
+		android:layout_toLeftOf="@id/photo_take"
+		android:src="@drawable/folder" 
+		android:layout_marginTop="10dp" 
+		android:layout_marginRight="10dp"
+		android:scaleType="fitXY" />
+</RelativeLayout>

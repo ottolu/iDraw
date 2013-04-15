@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageview1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/imageview1"
+        android:layout_gravity="center" >
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" >
+
+        <SlidingDrawer
+            android:id="@+id/slide"
+            android:layout_width="fill_parent"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:content="@+id/camera_set"
+            
+            android:handle="@+id/s" >
+
+            <View
+                android:id="@id/s"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp" />
+
+            <TableLayout
+                android:id="@id/camera_set"
+                android:layout_width="fill_parent"
+                android:layout_height="64dp"
+                android:background="@color/camera_set"
+                android:gravity="center_vertical" >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal" >
+
+                    <ImageView
+                        android:id="@+id/cancel"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cancel" />
+
+                    <ImageView
+                        android:id="@+id/iv1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/iv2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/iv3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/ok"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ok" />
+                </TableRow>
+            </TableLayout>
+        </SlidingDrawer>
+
+        <SlidingDrawer
+            android:id="@+id/slide1"
+            android:layout_width="fill_parent"
+            android:layout_height="64dp"
+            android:layout_below="@id/slide"
+            android:content="@+id/filter"
+            android:handle="@+id/ss" >
+
+            <View
+                android:id="@id/ss"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp" />
+
+            <LinearLayout
+                android:id="@id/filter"
+                android:layout_width="fill_parent"
+                android:layout_height="64dp" >
+            </LinearLayout>
+        </SlidingDrawer>
+    </RelativeLayout>
+
+</FrameLayout>

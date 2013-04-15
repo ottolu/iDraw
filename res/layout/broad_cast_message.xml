@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="@drawable/light_bg">
+
+	<RelativeLayout android:id="@+id/rlTitle"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/bg_title">
+		<Button android:id="@+id/btnClose" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/close"
+			android:textColor="#fff" android:textSize="12sp"
+			android:layout_marginLeft="6dp" android:layout_marginTop="8dp"
+			android:paddingBottom="2dp" android:background="@drawable/bg_btn"
+			android:layout_alignParentLeft="true" />
+
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/share_dialog_title"
+			android:layout_alignParentRight="true" android:layout_marginRight="110dp"
+			android:layout_marginTop="8dp" android:textSize="20sp"
+			android:textColor="#000" android:textStyle="bold" />
+
+		<Button android:id="@+id/btnSend" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/send"
+			android:textColor="#fff" android:textSize="12sp"
+			android:layout_marginRight="6dp" android:layout_marginTop="8dp"
+			android:paddingBottom="2dp" android:background="@drawable/bg_btn"
+			android:layout_alignParentRight="true" />
+	</RelativeLayout>
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_weight="1"
+		android:background="@drawable/bg_content">
+
+		<LinearLayout android:id="@+id/llImage"
+			android:layout_alignParentBottom="true" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="#00ffffff"
+			android:orientation="vertical">
+
+			<RelativeLayout android:id="@+id/rlTotal"
+				android:layout_width="wrap_content" android:layout_height="50dp">
+
+				<LinearLayout android:id="@+id/ll_text_limit_unit"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_alignParentRight="true" android:gravity="center"
+					android:background="@drawable/bg_delwords" android:focusable="true"
+					android:clickable="true" android:layout_alignParentBottom="false"
+					android:layout_marginRight="10dip">
+
+					<TextView android:id="@+id/tv_text_limit"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="140" android:layout_marginRight="5px"
+						android:textColor="#333" />
+
+					<ImageView android:src="@drawable/icon_delwords"
+						android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+				</LinearLayout>
+
+			</RelativeLayout>
+		</LinearLayout>
+
+		<LinearLayout android:layout_height="fill_parent"
+			android:layout_width="fill_parent" android:layout_alignParentTop="true"
+			android:layout_margin="3dp" android:layout_above="@id/llImage"
+			android:background="#00ffffff" android:orientation="vertical">
+			<EditText android:singleLine="false" android:id="@+id/etEdit"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:background="@null" android:capitalize="sentences"
+				android:imeOptions="actionDone" android:gravity="top|left"
+				android:isScrollContainer="true" android:layout_margin="3px" />
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/workImage"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentLeft="true" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="vertical"
+			android:layout_marginLeft="10dip" android:layout_marginBottom="10dip">
+			<ImageView android:id="@+id/photo_take"
+				android:layout_width="100dip" android:layout_height="wrap_content"
+				android:background="@null" />
+		</LinearLayout>
+
+	</RelativeLayout>
+</LinearLayout>

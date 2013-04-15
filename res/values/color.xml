@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="transparent">#FFFFFFFF</color>
+	<color name="white">#FFFFFF</color>
+	<color name="dark_blue">#0075a5</color>
+	<color name="board_color">#8f030303</color>
+	<color name="board_item_color">#8f000000</color>
+	<color name="camera_set">#ef000000</color>
+	
+</resources>

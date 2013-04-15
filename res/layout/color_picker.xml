@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/normal_popupwin"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <scut.nomi.idraw.view.ColorPickerView
+        android:id="@+id/ColorPicker"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/cbColorPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="使用幻彩变换色" />
+
+    <Button
+        android:id="@+id/btnColorPicker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="确定" />
+
+</LinearLayout>
